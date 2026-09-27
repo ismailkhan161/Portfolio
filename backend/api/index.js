@@ -2,23 +2,18 @@ import { createApp } from '../app.js';
 import { connectDatabase } from '../config/db.js';
 import { assertRequiredEnv } from '../config/env.js';
 
-let app;
-let dbConnection;
+const app = createApp();
 
-async function handler(req, res) {
+let dbPromise;
+
+export default async function handler(req, res) {
   assertRequiredEnv();
 
-  if (!app) {
-    app = createApp();
+  if (!dbPromise) {
+    dbPromise = connectDatabase();
   }
 
-  if (!dbConnection) {
-    dbConnection = connectDatabase();
-  }
-
-  await dbConnection;
+  await dbPromise;
 
   return app(req, res);
 }
-
-export default handler;
