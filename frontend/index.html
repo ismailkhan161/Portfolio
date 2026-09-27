@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ismail Khan | Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Ismail Khan is a Full Stack Developer specializing in React.js, Node.js, Express.js, and MongoDB."
+    />
+    <meta name="author" content="Ismail Khan" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#050914" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / social sharing.
+         To get a preview image, add og:image and og:url once you know your domain. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ismail Khan | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Ismail Khan is a Full Stack Developer specializing in React.js, Node.js, Express.js, and MongoDB."
+    />
+    <meta property="og:site_name" content="Ismail Khan" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Ismail Khan | Full Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Ismail Khan is a Full Stack Developer specializing in React.js, Node.js, Express.js, and MongoDB."
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ismail Khan",
+        "jobTitle": "Full Stack Developer",
+        "description": "Full Stack Developer specializing in React.js, Node.js, Express.js, and MongoDB."
+      }
+    </script>
+
+    <!-- Apply the saved (or system) theme before first paint to avoid a flash. -->
+    <script>
+      (function () {
+        var theme = 'dark';
+        try {
+          var saved = localStorage.getItem('theme');
+          if (saved === 'light' || saved === 'dark') theme = saved;
+          else if (window.matchMedia && !window.matchMedia('(prefers-color-scheme: dark)').matches) theme = 'light';
+        } catch (e) {}
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Please enable JavaScript to view this portfolio.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

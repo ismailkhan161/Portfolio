@@ -1,0 +1,26 @@
+{
+  "name": "ismail-khan-portfolio-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Express.js + MongoDB API for Ismail Khan's portfolio",
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "mongoose": "^9.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

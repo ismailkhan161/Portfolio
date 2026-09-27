@@ -1,0 +1,78 @@
+/* Design tokens. Dark is the default; light overrides below. */
+:root {
+  --font-display: 'Bricolage Grotesque Variable', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Instrument Sans Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  --container: 1160px;
+  --nav-height: 68px;
+  --ease: cubic-bezier(0.22, 0.8, 0.3, 1);
+
+  /* Dark theme */
+  --bg: #050914;
+  --bg-alt: #080e1f;
+  --surface: rgba(14, 22, 48, 0.58);
+  --surface-strong: #0c1430;
+  --input-bg: rgba(5, 9, 20, 0.6);
+  --border: rgba(120, 160, 255, 0.15);
+  --border-strong: rgba(120, 160, 255, 0.32);
+  --text: #eef2ff;
+  --text-muted: #a3b0d4;
+  --primary: #5c93ff;
+  --primary-soft: rgba(92, 147, 255, 0.14);
+  --gradient-a: #5c93ff;
+  --gradient-b: #38c8ff;
+  --btn-gradient: linear-gradient(135deg, #2b60f2, #1b45d6);
+  --glow: rgba(70, 130, 255, 0.45);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px -10px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 30px 70px -30px rgba(20, 60, 200, 0.55);
+  --nav-bg: rgba(5, 9, 20, 0.66);
+  --grid-line: rgba(120, 160, 255, 0.07);
+  --particle-rgb: 92, 147, 255;
+  --danger: #ff8a8f;
+  --success: #4ade9b;
+
+  /* Illustrated project covers */
+  --cover-bg: #0a1330;
+  --cover-panel: #0f1a3d;
+  --cover-card: #16234d;
+  --cover-line: rgba(150, 180, 255, 0.32);
+
+  /* Terminal in the hero stays dark in both themes */
+  --code-bg: #08102a;
+  --code-border: rgba(120, 160, 255, 0.3);
+}
+
+:root[data-theme='light'] {
+  --bg: #f8faff;
+  --bg-alt: #eef3ff;
+  --surface: rgba(255, 255, 255, 0.8);
+  --surface-strong: #ffffff;
+  --input-bg: #ffffff;
+  --border: rgba(20, 45, 110, 0.12);
+  --border-strong: rgba(20, 45, 110, 0.24);
+  --text: #0a1230;
+  --text-muted: #4a5680;
+  --primary: #1f54f0;
+  --primary-soft: rgba(31, 84, 240, 0.09);
+  --gradient-a: #1f54f0;
+  --gradient-b: #0686d4;
+  --glow: rgba(31, 84, 240, 0.3);
+  --shadow-sm: 0 1px 2px rgba(10, 24, 70, 0.06), 0 8px 24px -10px rgba(10, 24, 70, 0.14);
+  --shadow-lg: 0 30px 70px -30px rgba(31, 84, 240, 0.4);
+  --nav-bg: rgba(248, 250, 255, 0.78);
+  --grid-line: rgba(20, 45, 110, 0.06);
+  --particle-rgb: 31, 84, 240;
+  --danger: #c4262b;
+  --success: #0f8a4f;
+
+  --cover-bg: #e6eeff;
+  --cover-panel: #ffffff;
+  --cover-card: #eff4ff;
+  --cover-line: rgba(20, 45, 110, 0.2);
+}
